@@ -10,7 +10,6 @@
 
 1. To the degree that the WSJ enjoys a wide readership in the financial world and that previous findings in the literature indicate a weak linkage between objectivity, emotionality, frequency of media coverage and financial markets fluctuations, can a statistically significant causal relationship be demonstrated between the WSJ's coverage of financial news, specifically WSJ articles’ degree of subjectivity/objectivity and positivity/negativity polarity on a given day t, and stock price movements from the S&P 500 Index on day t + n for 0 <= n <= 3?
 
-
 ## Natural Language Processing Scores
 
 - **NLP Libraries used**: Valence Aware Dictionary and sEntiment Reasoner (“VADER”) and TextBlob, were used to perform sentiment analysis on the combined data. 
