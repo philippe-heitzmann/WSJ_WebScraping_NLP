@@ -68,7 +68,7 @@ class ScrapeFlow(SeleniumScraper):
 
     def _prep_output_file(self, filename):
         self.csv_file = open(filename, "w", encoding="utf-8", newline="")
-        self.writer = csv.writer(csv_file)
+        self.writer = csv.writer(self.csv_file)
 
     def signin(self):
         """Send username and password env vars to signin form fields and press submit button"""
@@ -204,7 +204,5 @@ class ScrapeFlow(SeleniumScraper):
 if __name__ == "__main__":
     start_time = time.time()
     sf = ScrapeFlow()
-    sf.signin()
-    sf.get_daylinks()
-    sf.parse_daylinks()
+    sf.main()
     logging.info(f'{time.time() - start_time} sec to scrape articles')
