@@ -25,7 +25,7 @@
 - These results therefore show WSJ sentiment analysis has low predictive power in relation to number of comments posted on WSJ articles, although, quite interestingly, VADER negativity scores are shown to be statistically significant to the 1% level in our models
     - This may be due to articles with higher negativity scores being more likely to announce events that would entail a public showing of grief or support, such as death of a public figure, which as such may generate more comments on that article
 
-**Predicting S&P500 with WSJ text** 
+**Predicting future day S&P500 moves with WSJ-article emotionality / positivity / negativity variables** 
 - To answer our second research question, a total of four simple linear regression analyses of the sentiment analysis variables against (i) same-day percentage change in the S&P 500 and (ii) following day percentage change in S&P 500 were performed.
 - Low **~0.01** Adj R^2 values and high p-values for all regressions show these are poor models with low predictive power, even with the VADER neutral values and SPX Volume numbers further added as extra independent variables 
 - These results therefore suggest WSJ sentiment analysis has low predictive power in relation to same-day SPX moves, although, quite interestingly, TextBlob polarity of WSJ article is significant to the 10% level. 
